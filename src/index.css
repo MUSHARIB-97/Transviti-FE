@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "NeueHass";
+  src: url("./assets/fonts/NeueHaasGrotesk/NHaasGroteskTXPro-75Bd.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-neue;
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    display: none;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #0154aa;
+    border: 2px solid #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
